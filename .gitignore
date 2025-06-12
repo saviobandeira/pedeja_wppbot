@@ -1,0 +1,8 @@
+# Whatsapp-web.js
+.wwebjs_cache/
+
+# Node.js
+node_modules/
+
+# Ignore contacts
+contacts.json
