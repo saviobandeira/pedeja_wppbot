@@ -1,6 +1,6 @@
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-const { autoReplies } = require('./config.js');
+const { handleKeywords } = require('./handlers/handleKeywords.js');
 
 
 const client = new Client({
@@ -18,7 +18,9 @@ client.on('ready', () => {
 });
 
 client.on('message', async (msg) => {
-    msg.reply(autoReplies.welcome);
+
+    await handleKeywords(client, msg);
+
 });
 
 client.initialize();    
