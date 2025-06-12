@@ -3,12 +3,11 @@
 <br></br>
 
 [![Licença MIT](https://img.shields.io/badge/Licença-MIT-green.svg)](LICENSE)
-[![Licença MIT](https://img.shields.io/badge/Licença-MIT-green.svg)](LICENSE)
 
 # PedeJá - WhatsApp Bot
 
 
-Este projeto é um **bot de automação do WhatsApp Web** desenvolvido com [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) e Node.js/TypeScript. O objetivo é facilitar o atendimento digital de restaurantes, possibilitando recebimento de pedidos, respostas automáticas, envio de cardápio, entre outras funções.
+Este projeto é um **bot de automação do WhatsApp Web** desenvolvido com [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) e Node.js. O objetivo é facilitar o atendimento digital de restaurantes, possibilitando recebimento de pedidos, respostas automáticas, envio de cardápio, entre outras funções.
 
 
 > ⚠️ **Aviso:** Este projeto ainda está em desenvolvimento. Estou organizando a base da aplicação e novas funcionalidades serão adicionadas nas próximas versões.
@@ -54,7 +53,7 @@ Inicie o bot:
 ```bash
     npm run start
 ```
-    O terminal exibirá um QR Code. Leia esse código com o WhatsApp do restaurante.
+O terminal exibirá um QR Code. Leia esse código com o WhatsApp do restaurante.
 
 ## Contato
 
