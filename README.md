@@ -15,10 +15,10 @@ Este projeto é um **bot de automação do WhatsApp Web** desenvolvido com [what
 
 ## Funcionalidade
 
-- Envio automático do cardápio em png - (EM BREVE)
-- Respostas rápidas a dúvidas frequentes (horário, localização, etc) - (EM BREVE)
+- Envio automático do cardápio em png
+- Respostas rápidas a dúvidas frequentes (horário, localização, etc)
 - Recebimento e confirmação de pedidos - (EM BREVE)
-- Gatilhos por palavras-chave (ex: "cardápio", "fazer pedido", "endereço") - (EM BREVE)
+- Gatilhos por palavras-chave (ex: "cardápio", "horário", "endereço")
 - Fácil personalização para diferentes restaurantes
 
 
