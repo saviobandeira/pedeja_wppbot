@@ -16,6 +16,12 @@ function loadContacts() {
     contacts = JSON.parse(fs.readFileSync(contactsPath, 'utf8'));
 }
 
+function getContact(id) {
+    if (!hasContact(id)) return;
+
+    return contacts.find(contact => contact.id === id);
+}
+
 // Salva os contatos do cache em memória para o arquivo
 function saveContacts() {
     fs.writeFileSync(contactsPath, JSON.stringify(contacts, null, 2));
@@ -60,6 +66,7 @@ function shouldSendWelcome(id, hours = 1) {
 
 module.exports = {
     loadContacts,
+    getContact,
     hasContact,
     addContact,
     updateLastMessage,
