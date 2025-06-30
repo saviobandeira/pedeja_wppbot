@@ -30,6 +30,12 @@ async function handleKeywords(client, message) {
         return;
     }
 
+    // Verifica se a mensagem contém alguma palavra-chave de pedido
+    if (keywords.order.some(k => body.includes(k))) {
+        await message.reply(autoReplies.order);
+        return;
+    }
+
     // Mensagem genérica caso não reconheça a intenção
     await message.reply(autoReplies.unknown);
 }
