@@ -19,6 +19,7 @@ const autoReplies = {
     menu: "Aqui está nosso cardápio:",
     address: `Nosso endereço é: ${restaurantInfo.address}`,
     hours: `Nosso horário de funcionamento: ${restaurantInfo.horario}`,
+    order: 'Para realizar seu pedido, por favor, informe os itens desejados e o endereço para entrega.\nAssim que recebermos essas informações, um atendente será notificado para confirmar o seu pedido com você.',
     unknown: "Desculpe, não entendi sua mensagem. Digite 'cardápio' para ver o menu ou 'fazer pedido' para iniciar um pedido."
 };
 
