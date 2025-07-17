@@ -13,7 +13,12 @@ function loadContacts() {
         fs.mkdirSync(dataPath);
     }
 
+    if (!fs.existsSync(contactsPath)) {
+        fs.writeFileSync(contactsPath, JSON.stringify([], null, 2));
+    }
+
     contacts = JSON.parse(fs.readFileSync(contactsPath, 'utf8'));
+    return console.log('Todos os contatos foram carregados com sucesso.');
 }
 
 function getContact(id) {
