@@ -2,7 +2,9 @@ const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const { handleKeywords } = require('./handlers/handleKeywords.js');
 const { autoReplies } = require('./config.js');
-const { loadContacts,
+const { loadOrders } = require('./utils/orderStorage.js');
+const {
+    loadContacts,
     hasContact,
     addContact,
     updateLastMessage,
@@ -21,8 +23,9 @@ client.on('qr', (qr) => {
 });
 
 client.on('ready', () => {
-    console.log('Client is ready!');
     loadContacts();
+    loadOrders();
+    console.log('Client is ready!');
 });
 
 client.on('message', async (msg) => {
