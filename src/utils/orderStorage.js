@@ -14,7 +14,12 @@ function loadOrders() {
         fs.mkdirSync(dataPath);
     }
 
+    if (!fs.existsSync(ordersPath)) {
+        fs.writeFileSync(ordersPath, JSON.stringify([], null, 2));
+    }
+
     orders = JSON.parse(fs.readFileSync(ordersPath, 'utf-8'));
+    return console.log('Todos os pedidos foram carregados com sucesso.');
 }
 
 function getOrder(id) {

@@ -6,3 +6,4 @@ node_modules/
 
 # Ignore contacts
 contacts.json
+orders.json
