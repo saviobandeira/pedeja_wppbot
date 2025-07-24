@@ -29,9 +29,12 @@ client.on('ready', () => {
 });
 
 client.on('message', async (msg) => {
+    const contact = await msg.getContact();
+    const contactID = contact.id;
+    const contactName = contact.name || contact.pushname || '';
 
-    if (!hasContact(msg.from)) {
-        addContact(msg.from, msg.sender?.pushname || '');
+    if (!hasContact(contactID)) {
+        addContact(contactID, contactName);
         msg.reply(autoReplies.welcome);
         return;
     }
